@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Archivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+IT+Moderna:wght@100..400&family=Sedan:ital@0;1&display=swap');
+
+:root {
+    --background-color: #0f0f0f;
+    --color-white: #fff;
+    --btn-color: rgb(255, 153, 0);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--color-white);
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-weight: 1400;
+    font-style: italic;
+    
+}
+article{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+}
+section{
+    background: linear-gradient(to top, rgb(0, 0, 0, 0), rgb(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
+
+}
+nav {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+nav a {
+    font-size: 25px;
+    margin-right: 20px; /* Espaço entre os links */
+    color: var(--color-white);
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+/* Adiciona o estilo para o link ativo */
+a:hover{
+    transform: scale(1.1);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+}
+
+#image_scan_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -99999;
+}
+
+.image_scan {
+    width: 650px;
+    filter: brightness(.5) grayscale(100%) contrast(300%);
+}
+
+.card{
+    float: left;
+    margin: 30px;
+    border-radius: 5px;
+    max-width: 235px;
+    height: 510px;
+    border: 3px solid #fff;
+}
+.h_card{
+    text-align: center;
+    font-size: 30px;
+    color: var(--color-white);
+}
+.p_card{
+    float: left;
+    font-size: 12px;
+    margin-top: 10px;
+    color: var(--color-white);
+    font-size: 20px;
+    margin-bottom: 3vh;
+  
+}
+.explicacao{
+    margin-bottom: 1210
+}
+.title{
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 60px;
+    color: var(--color-white);
+}
+.subtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+.destaque{
+    color: rgb(255, 153, 0);
+    margin-right: 5px;
+}
+input::placeholder{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+input[type="text"] {
+    display: block; /* Altera o display para block para aplicar as propriedades de margin */
+    margin: 20px auto; /* Define margens automáticas para centralizar horizontalmente */
+    padding: 10px;
+    width: 80%; /* Largura do input */
+}
+.btn_calcular{
+    display: block; /* Altera o display para block para aplicar as propriedades de margin */
+    margin: 20px auto; /* Define margens automáticas para centralizar horizontalmente */
+    border-radius: 5px;
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+    background-color: var(--btn-color);
+    justify-content: center;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    cursor: pointer;
+}
+
+

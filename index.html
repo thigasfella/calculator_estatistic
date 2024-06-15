@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estatística na programação</title>
+    <link rel="shortcut icon" href="img/calculator.png" type="image/x-icon" / >
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<nav>
+        <a href="#home" id="home">INÍCIO</a> 
+        <a href="#calculadora">CALCULADORA ESTATÍSTICA</a>
+</nav>
+
+<main>
+<article>
+    <div class="container">
+        <div id="image_scan_container">
+            <img src="img/image_scan.png" alt="avatar scan" class="image_scan">
+        </div>
+    </div>
+</article>
+</main>
+    <section id="calculadora">
+        <div class="explicacao">
+            <p class = "title">EXPLICAÇÃO</p>
+            <p class = "subtitle"><span class="destaque">Média Aritmética Simples:</span> É a soma de todos os valores dividida pela quantidade de valores, útil para calcular um valor médio simples.</p>
+            <p class = "subtitle"><span class="destaque">Média Aritmética Ponderada:</span> Similar à média simples, mas cada valor pode ter um peso diferente, influenciando mais ou menos no resultado final.</p>
+            <p class = "subtitle"><span class="destaque">Mediana:</span> É o valor do meio em uma lista de números ordenados, ou a média dos dois valores centrais se houver um número par de elementos.</p>
+            <p class = "subtitle"><span class="destaque">Moda:</span> Representa o valor mais frequente em um conjunto de dados, útil para identificar a ocorrência mais comum dentro de uma distribuição.</p>
+        </div>
+    <div class="container_card">
+        <div class="card">
+            <p class="h_card">Média Aritmética Simples</p>
+            <hr>
+            <p class="p_card">Insira valores para calcular a Média Aritmética.<br>
+                Utilize ponto(.) para números com casas decimais.<br>
+                
+                Separe os valores usando espaço. <br>Ex.: 1 2 3...</p>
+            <input type="text" name="numbers" id="input_aritmetica_simples" placeholder="Insira os valores">
+            <input type="text" name="numbers" id="input_aritmetica_simples_resultado" placeholder="RESULTADO" disabled>
+            <button class="btn_calcular" id="calcular_aritmetica_simples">CALCULAR</button>
+        </div>
+        <div class="card">
+            <p class="h_card">Média Aritmética Ponderada</p>
+            <hr>
+            <p class="p_card">Insira valores para calcular a Média Aritmética.<br>
+                Utilize ponto(.) para números com casas decimais.<br>
+                
+                Separe os valores usando espaço. <br>Ex.: 1 2 3...</p>
+            <input type="text" name="numbers" id="input_aritmetica_ponderada" placeholder="Insira os valores">
+            <input type="text" name="numbers" id="input_aritmetica_ponderada_pesos" placeholder="Insira os pesos">
+            <input type="text" name="numbers" id="input_aritmetica_ponderada_resultado" placeholder="RESULTADO" disabled>
+            <button class="btn_calcular" id="calcular_aritmetica_ponderada">CALCULAR</button>
+        </div>
+        <div class="card">
+            <p class="h_card">Mediana</p>
+            <hr>
+            <p class="p_card">Insira valores para calcular a Média Aritmética.<br>
+                Utilize ponto(.) para números com casas decimais.<br>
+                
+                Separe os valores usando espaço. <br>Ex.: 1 2 3...</p>
+                <input type="text" name="numbers" id="input_mediana" placeholder="Insira os valores">
+                <input type="text" name="numbers" id="input_mediana_resultado" placeholder="RESULTADO" disabled>
+                <button class="btn_calcular" id="btn_calcular_mediana">CALCULAR</button>
+        </div>
+        <div class="card">
+            <p class="h_card">Moda</p>
+            <hr>
+            <p class="p_card">Insira valores para calcular a Média Aritmética.<br>
+                Utilize ponto(.) para números com casas decimais.<br>
+                
+                Separe os valores usando espaço. <br>Ex.: 1 2 3...</p>
+                <input type="text" name="numbers" id="input_moda" placeholder="Insira os valores">
+                <input type="text" name="numbers" id="input_moda_resultado" placeholder="RESULTADO" disabled>
+                <button class="btn_calcular" id="btn_moda_calculo">CALCULAR</button>
+        </div>
+    </div>
+    </section>
+</header>
+<script src="script.js"></script>
+</body>
+</html>
