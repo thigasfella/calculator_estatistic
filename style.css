@@ -10,6 +10,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 
 body {
@@ -22,9 +23,13 @@ body {
 }
 article{
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+    height: 100%;
+    width: 100%;
 }
 section{
     background: linear-gradient(to top, rgb(0, 0, 0, 0), rgb(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
+    height: 100%;
+    width: 100%;
 
 }
 nav {
@@ -58,17 +63,19 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: -99999;
+    z-index: -1;
 }
 
 .image_scan {
-    width: 650px;
+    width: 50vw;
+    height: 100%;
     filter: brightness(.5) grayscale(100%) contrast(300%);
 }
 
 .card{
     float: left;
     margin: 30px;
+    margin-top: 100px;
     border-radius: 5px;
     max-width: 267px;
     height: 510px;
@@ -87,9 +94,6 @@ a:hover{
     font-size: 20px;
     margin-bottom: 3vh;
   
-}
-.explicacao{
-    margin-bottom: 1210
 }
 .title{
     margin-bottom: 50px;
@@ -141,4 +145,75 @@ input[type="text"] {
     cursor: pointer;
 }
 
+/* Estilos Específicos para Pequenos Dispositivos */
+@media (max-width: 600px) {
+    .image_scan {
+        width: 100vw;
+    }
+    .card {
+       
+            float: none; /* Remove a flutuação */
+            margin: 100px auto; /* Centraliza horizontalmente */
+            max-width: 267px; /* Mantém a largura máxima */
+            height: auto; /* Permite que a altura seja ajustada automaticamente */
+    }
+    .subtitle{
+        display: flex;
+        flex-direction: column; /* A coluna é o padrão, mas explicitamente definido aqui para garantir */
+        align-items: center; /* Centraliza os itens verticalmente */
+        justify-content: center;
+        height: 12vh;
+        text-align: center;
+        margin: 0 auto;
+        width: 90%;
+        margin-top: 7vh;
+         
+    }
+}
+/* Estilos Específicos para Dispositivos Médios */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .image_scan {
+        width: 100vw;
+    }
+    .card {
+       
+        float: none; /* Remove a flutuação */
+        margin: 100px auto; /* Centraliza horizontalmente */
+        max-width: 267px; /* Mantém a largura máxima */
+        height: auto; /* Permite que a altura seja ajustada automaticamente */
+}
+.subtitle{
+    display: flex;
+    flex-direction: column; /* A coluna é o padrão, mas explicitamente definido aqui para garantir */
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: center;
+    height: 12vh;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 7vh;
+     
+}
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .image_scan {
+        width: 70vw;
+    }
+    .card {
+       
+        float: left; /* Remove a flutuação */
 
+}
+.subtitle{
+    display: flex;
+    flex-direction: column; /* A coluna é o padrão, mas explicitamente definido aqui para garantir */
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: center;
+    height: 12vh;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 3vh;
+     
+}
+}
