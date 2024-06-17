@@ -146,7 +146,7 @@ input[type="text"] {
 /* Estilos Específicos para Pequenos Dispositivos */
 @media (max-width: 600px) {
     .image_scan {
-        width: 120vw;
+        width: 100vw;
     }
     .card {
        
