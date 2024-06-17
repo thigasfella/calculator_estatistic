@@ -150,6 +150,7 @@ input[type="text"] {
     }
     .image_scan {
         width: 100vw;
+        margin-bottom: 100px;
     }
     .card {
        
@@ -185,6 +186,9 @@ input[type="text"] {
 }
 /* Estilos Específicos para Dispositivos Médios */
 @media (min-width: 601px) and (max-width: 1024px) {
+    .p_card{
+        margin-left: 10px;      
+    }
     .image_scan {
         width: 100vw;
     }
@@ -210,6 +214,9 @@ input[type="text"] {
 
 }
 @media (min-width: 1025px) and (max-width: 1440px) {
+    .p_card{
+        margin-left: 10px;      
+    }
     .image_scan {
         width: 70vw;
     }
